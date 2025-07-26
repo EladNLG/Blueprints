@@ -35,14 +35,14 @@ public class Plugin : BaseUnityPlugin
         Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
         var harmony = new Harmony("me.eladnlg.fuck");
         harmony.PatchAll();
-        InputActionMap _actionMap = new InputActionMap("giveUpgrade");
+        /*InputActionMap _actionMap = new InputActionMap("giveUpgrade");
         var action = _actionMap.AddAction("fuck");
         action.AddBinding("Keyboard/F1");
         action.performed += Action_performed;
         var action2 = _actionMap.AddAction("fuck2");
         action2.AddBinding("Keyboard/F2");
         action2.performed += Action2_performed;
-        _actionMap.Enable();
+        _actionMap.Enable();*/
     }
 
     private void Action_performed(InputAction.CallbackContext obj)
