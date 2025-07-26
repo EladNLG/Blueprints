@@ -78,7 +78,7 @@ public class CopyUpgrade : PlayerUpgrade
 
     public override void Apply(Player player, UpgradeInstance instance)
     {
-        UpgradeInstance target = GetUpgradeTouchingThis(Player.LocalPlayer.Character, instance);
+        UpgradeInstance target = GetUpgradeTouchingThis(player.Character, instance);
         if (target != null)
             Debug.Log("applying upgrade " + target.Upgrade);
         if (target == null)
